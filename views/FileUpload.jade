@@ -1,0 +1,9 @@
+//
+   Created by Bruce LH Li on 05/05/2015.
+
+extends layout
+block content
+   h1= title
+   form#formAddUser(name="UploadFile",method="post",action="/UploadFile" enctype="multipart/form-data")
+      input#inputUserName(type="file", placeholder="file", name="upload")
+      button#btnSubmit(type="submit") submit

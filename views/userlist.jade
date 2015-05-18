@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1.
+        User List
+    table(border='1px',cellspacing="0",cellpadding="0")
+        tr
+        td='ID'
+        td='FileName'
+        td='FileType'
+        td='FileSize'
+        each user, i in userlist
+            tr
+                td=user._id
+                td=user.filename
+                td=user.filetype
+                td=user.filesize
